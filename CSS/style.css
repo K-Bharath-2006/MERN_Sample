@@ -1,44 +1,85 @@
 /* Universal Selector */
-*{
-    /* border: 1px solid red; */
-}
+/* *{
+    /* border: 1px solid red;
+} */
 
 /* tag selector */
 
-h1{
+/* h1{
     background-color: green;
-}
+} */
 
 /* id selector */
 
-#a{
+/* #a{
     color: red;
     background-color: yellow;
-}
+} */
 /* class selector */
-.b{
-    /* color: blue; */
+/* .b{
+    /* color: blue; 
     border: 10px solid;
-}
+} */
 
 /* Group Selector */
-h1,h2,h3{
+/* h1,h2,h3{
     color: black;
-}
+} */
 
-/* decendant selector */
+/* decendant selector
 div p{
     color: red;
     background-color: yellow;
-}
+} */
 
 /* child selector > */
-div > p{
+/* div > p{
     color: black;
     background-color: blue;
-}
+} */
+
 /* Attribute selector */
-button[type="submit"]{
+/* button[type="submit"]{
     color: darkblue;
     font-size: 32px;
+} */
+
+
+/* pseudo classes */
+li:nth-child(2){
+    color :blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li:nth-child(2):hover{
+    color: yellow;
+    background-color: black;
+    font-size: 30px;
+}
+
+li:hover{
+    color: red;
+    background-color: chocolate;
+    font-size: 20px;
+}
+
+/* pesudo elements works only on block level not in in-line elements*/
+
+#r::before{
+    content: "Written by CSS";
+}
+
+.b::first-letter{
+    font-size: 40px;
+    color: red;
+}
+
+/* to make the changes in in-line like span we make it as block */
+#q{
+    display: block;
+}
+
+#q::first-letter{
+    font-size: 30px;
+    color: blue;
 }
