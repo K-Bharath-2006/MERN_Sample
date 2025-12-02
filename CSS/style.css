@@ -46,7 +46,7 @@ div p{
 
 
 /* pseudo classes */
-li:nth-child(2){
+/* li:nth-child(2){
     color :blue;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -61,21 +61,21 @@ li:hover{
     color: red;
     background-color: chocolate;
     font-size: 20px;
-}
+} */
 
 /* pesudo elements works only on block level not in in-line elements*/
 
-#r::before{
+/* #r::before{
     content: "Written by CSS";
 }
 
 .b::first-letter{
     font-size: 40px;
     color: red;
-}
+} */
 
 /* to make the changes in in-line like span we make it as block */
-#q{
+/* #q{
     display: block;
 }
 
@@ -87,4 +87,18 @@ li:hover{
 #q::first-line{
     color: yellow;
     font-size: 32px;
+} */
+
+/* it makes full website as without spaces */
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+/* Box Model */
+h1:nth-child(1){
+    border: 3px solid red;
+    /* padding: 30px; */
+    /* padding: 50px 50px 20px 30px;/ */
+    padding: 20px 600px;
+    margin: 80px;
 }

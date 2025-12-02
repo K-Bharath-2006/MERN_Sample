@@ -1,0 +1,11 @@
+.conatiner{
+    width: 40vw;
+    height: 80vh;
+    border: 1px solid red;
+}
+
+h1{
+    background-color: cadetblue;
+    font-weight: 700;
+    color: black;
+}
