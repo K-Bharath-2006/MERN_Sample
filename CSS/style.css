@@ -25,3 +25,20 @@ h1{
 h1,h2,h3{
     color: black;
 }
+
+/* decendant selector */
+div p{
+    color: red;
+    background-color: yellow;
+}
+
+/* child selector > */
+div > p{
+    color: black;
+    background-color: blue;
+}
+/* Attribute selector */
+button[type="submit"]{
+    color: darkblue;
+    font-size: 32px;
+}
