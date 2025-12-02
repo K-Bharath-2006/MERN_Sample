@@ -20,3 +20,8 @@ h1{
     /* color: blue; */
     border: 10px solid;
 }
+
+/* Group Selector */
+h1,h2,h3{
+    color: black;
+}
