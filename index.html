@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Learning HTML for Full Stack" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Express" />
+    <!--Just add the Author Name-->
     <meta name="author" content="Mr.Black" />
-    <meta http-equiv="refresh" content="5; url=https://www.flipkart.com" />
+    <!--Page Refresh-->
+   <!-- <meta http-equiv="refresh" content="5; url=https://www.flipkart.com" /> -->
     <title>Document</title>
   </head>
   <body>
+    <a href="index1.html" target="_blank">Visit My Website</a>
+    <a href="#a">Pixel</a>
+    <!-- Block Level  -->
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -72,18 +77,21 @@
       alt="Placeholder Image"
     />
     <iframe
-      src="https://flipkart.com/"
+      src="index1.html"
       frameborder="10"
       width="1200px"
       height="500px"
     ></iframe>
 
     <form action="">
+      <legend>Contact</legend>
+      <fieldset>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" minlength="5" maxlength="10" required/><br /><br />
       <label for="age">Age:</label>
       <input type="number" id="age" name="age" min="3" max="120" required/><br /><br />
       <input type="submit" value="Submit" />
+      </fieldset>
     </form>
   </body>
 </html>
