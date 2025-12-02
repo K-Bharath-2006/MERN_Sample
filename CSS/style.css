@@ -1,4 +1,22 @@
-h1 {
-  color: green;
-  border: 1px solid darkgrey;
+/* Universal Selector */
+*{
+    /* border: 1px solid red; */
+}
+
+/* tag selector */
+
+h1{
+    background-color: green;
+}
+
+/* id selector */
+
+#a{
+    color: red;
+    background-color: yellow;
+}
+/* class selector */
+.b{
+    /* color: blue; */
+    border: 10px solid;
 }
