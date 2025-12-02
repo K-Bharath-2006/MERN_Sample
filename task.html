@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mr.Black" />
+    <title>HTML Only</title>
+  </head>
+  <body>
+    <h1>My HTML-Only Page</h1>
+    <h4>Simple site build using only Html-Tags</h4>
+
+    <ul>
+      <li><a href="#h">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <h2 id="h">Welcome</h2>
+    <p>
+      This Page demonstrates layout and content using only HTML tags.Use
+      Headings,list,tables, and forms to present information without CSS
+    </p>
+
+    <h2 id="about">About this Page</h2>
+
+    <p>
+      The Page uses Semantic tags : &lt header &gt, &lt nav &gt, &lt main &gt, 
+      &lt article &gt, &lt aside &gt ,and &lt footer &gt
+    </p>
+
+    <h3>Key Points</h3>
+
+    <ol>
+        <li>Readable structure for users and search engines</li>
+        <li>NO External Styles - browser default style only</li>
+        <li>Works well for quick prototypes or content-focused pages</li>
+    </ol>
+
+    <h2 id="features">Features(HTML-only)</h2>
+
+    <dl>
+        <dt>Semantic Layout</dt>
+        <dd>Clear structure using sectioning elements</dd>
+        <dt>Accessible navigation</dt>
+        <dd>Keyboard-and screen-reader-friendly links and headings</dd>
+        <dt>Forms and tables</dt>
+        <dd>Collect input and show tabular data using plain HTML</dd>
+    </dl>
+
+    <h3>Sample Data Table</h3>
+    <table border="2">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product List</span>      
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price(INR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>Stationary</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Pen</td>
+                <td>Stationary</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BackPack</td>
+                <td>Accessories</td>
+                <td>799</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Quick Links</h3>
+
+        <ul>
+            <li><a href="#features">See Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">More About this demo</a></li>
+        </ul>
+
+    <h3 id="contact">Contact</h3>
+    <p>If you'd like to get in touch,fill the form(no styling )</p>
+
+    <form action="">
+      <fieldset>
+      <legend>Contact Form</legend>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" minlength="5" maxlength="10" required/><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required /><br><br>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" cols="20"></textarea><br><br>
+      <label for="contact">Preferred Contact:</label><br>
+      <input type="radio" id="email" name="contact" value="Email">
+      <label for="email">Email</label><br>
+      <input type="radio" id="phone" name="contact" value="Phone">
+      <label for="phone">Phone</label><br><br>
+      <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+
+    <p>&copy; 2025 My Html-only Website</p>
+  </body>
+</html>
