@@ -9,3 +9,26 @@ h1{
     font-weight: 700;
     color: black;
 }
+
+.sticky{
+    position: sticky;
+    top: 20px;
+}
+
+.realtive
+{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
