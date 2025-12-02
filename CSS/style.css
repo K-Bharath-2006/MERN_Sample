@@ -83,3 +83,8 @@ li:hover{
     font-size: 30px;
     color: blue;
 }
+
+#q::first-line{
+    color: yellow;
+    font-size: 32px;
+}
