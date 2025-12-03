@@ -4,9 +4,12 @@
     height: 90vh;
     gap: 10px;
     /* flex-direction: row;  or column or row / column reverse */
-    flex-direction: column;
+    /* flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* align-content: center; */
 }
 
 .flexItem{
@@ -22,3 +25,14 @@
 /* Values of flex direction -- > row,column,row reverse,column reverse */
 
 /* Values of align items  -- > center,flex-start,flex-end,base-line */
+
+/* wrap values : nowrap,wrap,wrap-reverse */
+
+.flexItem:nth-child(1){
+    order: 1;
+    align-self: flex-end;
+}
+.flexItem:nth-child(6){
+    order: -1;
+    align-self: center;
+}
