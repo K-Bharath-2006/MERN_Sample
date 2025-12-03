@@ -1,0 +1,24 @@
+.flexContainer{
+    border: 1px solid red;
+    display: flex;
+    height: 90vh;
+    gap: 10px;
+    /* flex-direction: row;  or column or row / column reverse */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexItem{
+    background-color: yellow;
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    height: 60px;
+    width: 120px;
+}
+
+
+/* Values of flex direction -- > row,column,row reverse,column reverse */
+
+/* Values of align items  -- > center,flex-start,flex-end,base-line */
