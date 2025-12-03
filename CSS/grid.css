@@ -1,0 +1,19 @@
+.grid{
+    border: 1px solid red;
+    height: 90vh;
+    display: grid;
+    /* grid-template-columns: 100px 200px 300px 400px; */
+    /* grid-template-rows: 100px 100px; */
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: repeat(4,200px); */
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px;
+}
+
+.item{
+    color: darkred;
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 30px 40px;
+}
