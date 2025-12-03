@@ -1,0 +1,227 @@
+#h{
+    text-align: center;
+}
+
+.flexItem{
+    padding: 10px;
+
+}
+
+.flexbox1{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    /* justify-content: flex-start;
+    flex-wrap: wrap; */
+}
+.flexbox2{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+.flex1{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 100px;
+    align-content: center;
+    text-align: center;
+}
+.flex2{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 80px;
+    width: 1450px;
+    align-content: center;
+    text-align: center;
+}
+.flexbox3{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.flex3{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 100px;   
+    align-content: center;
+    text-align: center;
+}
+.flex4{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 100px;   
+    align-content: center;
+    text-align: center;
+}
+.flexbox4{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex5{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 50px;   
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.flex6{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 100px;
+    width: 70px;   
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.flex7{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 100px;   
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+}
+.flexbox5{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex8{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 200px;   
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.flexbox6{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex9{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 50px;   
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.flexbox7{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex10{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 70px;   
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.flex10:nth-child(2){
+    order : 1;
+}
+.flex10:nth-child(3){
+    order : 2;
+}
+.flexbox8{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: self-start; */
+}
+.flex11{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 70px;   
+    align-content: center;
+    text-align: center;
+    align-self: flex-start;
+}
+.flex12{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 70px;   
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+.flex13{
+    background-color :aqua;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 70px;   
+    align-content: center;
+    text-align: center;
+}
+
