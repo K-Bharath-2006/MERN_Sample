@@ -28,3 +28,39 @@ const c = 1000;
 console.log(c)
 
 
+// Functions 
+
+// 1 . Named Functions
+
+//  here we can call function before its declaration.
+fun();
+function fun(){
+    console.log("Named Function");
+}
+
+fun();
+
+// 2. Function Expression
+ 
+//  but here we can't call function before its declaration.
+// funExp(); --> this will cause ReferenceError if let or else TypeError if var is used.
+var funExp = function(){
+    console.log("Function Expression");
+}   
+
+funExp();
+
+// 3. Arrow Function(ES6)
+
+let arrowFun = () => {
+    console.log("Arrow Function");
+}
+
+arrowFun();
+
+// 4.Callback Function and 5. IIFE(Immediately Invoked Function Expression)
+
+(() => {
+    console.log("Callback and IIFE");
+})();
+
