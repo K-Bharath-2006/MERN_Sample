@@ -15,3 +15,8 @@ add(5,5);
 sub(5,5);
 mul(5,5);
 div(5,5);
+
+function sumOfValues(p1,p2){
+    console.log("The sum of",p1,"and",p2,"is :",p1+p2);
+}
+sumOfValues(3,2);
