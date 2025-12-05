@@ -34,22 +34,42 @@
 // console.log(s5);
 
 
-//  Read and Write Operation
+// //  Read and Write Operation
 
 
-let head = document.querySelector("p");
+// let head = document.querySelector("p");
 
-console.log(head.textContent);
+// console.log(head.textContent);
 
-head.textContent = "New Text from JS";
-
-
-let div = document.querySelector("div");
-
-div.innerHTML = "<p> This is New div Para </p>";
+// head.textContent = "New Text from JS";
 
 
+// let div = document.querySelector("div");
 
-console.log(div.textContent);
-console.log(div.innerHTML);
+// div.innerHTML = "<p> This is New div Para </p>";
+
+
+
+// console.log(div.textContent);
+// console.log(div.innerHTML);
+
+// Add/Remove/Toggle class in tags
+
+let head = document.querySelector("h1");
+
+console.log(head);
+
+head.classList.add("color");
+head.classList.remove("border");
+head.classList.toggle("background");
+
+
+// styling
+
+let p = document.querySelector("p");
+
+p.style.color = "red";
+p.style.backgroundColor = "black"; 
+
+// here these css will be in --- inline css because of higher priority
 
