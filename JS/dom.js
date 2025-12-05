@@ -73,3 +73,20 @@ p.style.backgroundColor = "black";
 
 // here these css will be in --- inline css because of higher priority
 
+let ul = document.createElement("ul");
+let li = document.createElement("li");
+
+
+// Adding elements to the body --->
+li.textContent = "Item 1";
+ul.appendChild(li);
+
+document.body.appendChild(ul);
+
+let arr = ["Apple","Banana","Mango"]
+arr.forEach((el) => {
+    let lo = document.createElement("li");
+    lo.textContent = el;
+    ul.appendChild(lo);
+});
+
