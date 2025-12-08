@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100px;
+            display: flex;
+            padding-top: 20px;
+            background-color: lightcyan;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 150px;
+        }
+        form{
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-direction: column;
+            border-radius: 15px;
+        }
+        #name{
+            border: 1px solid white;
+            border-radius: 5px;
+            
+        }
+        #feedback{
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 200px;
+        }
+        .q{
+            border: 1px solid white;
+            background-color: red;
+            color: black;
+            padding: 10px;
+            gap: 10px;
+
+        }
+    </style>
+    <script src="form.js" async></script>
+</head>
+<body>
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option>HTML & CSS</option>
+        <option>JavaScript</option>
+        <option>React JS</option>
+        <option>Node JS</option>
+      </select>
+
+      <label>Rating (1 to 5):</label>
+      <input type="range" id="rating" min="1" max="5" value="3" />
+
+      <textarea
+        id="feedback"
+        placeholder="Write your feedback..."
+        required
+      ></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div id="output"></div>
+</body>
+</html>

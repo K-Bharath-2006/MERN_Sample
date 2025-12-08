@@ -53,40 +53,61 @@
 // console.log(div.textContent);
 // console.log(div.innerHTML);
 
-// Add/Remove/Toggle class in tags
+// // Add/Remove/Toggle class in tags
 
-let head = document.querySelector("h1");
+// let head = document.querySelector("h1");
 
-console.log(head);
+// console.log(head);
 
-head.classList.add("color");
-head.classList.remove("border");
-head.classList.toggle("background");
-
-
-// styling
-
-let p = document.querySelector("p");
-
-p.style.color = "red";
-p.style.backgroundColor = "black"; 
-
-// here these css will be in --- inline css because of higher priority
-
-let ul = document.createElement("ul");
-let li = document.createElement("li");
+// head.classList.add("color");
+// head.classList.remove("border");
+// head.classList.toggle("background");
 
 
-// Adding elements to the body --->
-li.textContent = "Item 1";
-ul.appendChild(li);
+// // styling
 
-document.body.appendChild(ul);
+// let p = document.querySelector("p");
 
-let arr = ["Apple","Banana","Mango"]
-arr.forEach((el) => {
-    let lo = document.createElement("li");
-    lo.textContent = el;
-    ul.appendChild(lo);
-});
+// p.style.color = "red";
+// p.style.backgroundColor = "black"; 
 
+// // here these css will be in --- inline css because of higher priority
+
+// let ul = document.createElement("ul");
+// let li = document.createElement("li");
+
+
+// // Adding elements to the body --->
+// li.textContent = "Item 1";
+// ul.appendChild(li);
+
+// document.body.appendChild(ul);
+
+// let arr = ["Apple","Banana","Mango"]
+// arr.forEach((el) => {
+//     let lo = document.createElement("li");
+//     lo.textContent = el;
+//     ul.appendChild(lo);
+// });
+
+
+
+let form = document.querySelector("form");
+form.addEventListener("submit", (e)=> {
+    e.preventDefault();
+    let name = document.querySelectorAll("input")[0];
+    let feedback = document.querySelectorAll("input")[1];
+    if(name.value == ""){
+        alert("Enter the name");
+    }
+    if(feedback.value.length < 5){
+        alert("Enter the feedback minimum 5 characters");
+    }
+    console.log(name.value,feedback.value);
+    let res = document.querySelector("#res");
+    res.textContent = `Thankyou ${name.value} for the feedback! and feedback is ${feedback.value}`;
+    form.reset();
+})
+
+
+// this will not work in arrow function
