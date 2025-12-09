@@ -1,14 +1,25 @@
+import { useState } from 'react';
 import './App.css';
-import GrandFather from './GrandFather';
+
+
 function App() {
-  let msg = "Welcome Home Black";
-  // let age = 20
+  let [val,setVal] = useState(0);
+
+  const handleIncrement = () =>{
+    setVal(val+1)
+  }
+  const handleDecrement = () =>{
+    setVal(val-1)
+  }
   return (
     <div className="App">
       <h1>Welcome to Great Karikalan Magic Show</h1>
-      <GrandFather m = {msg} />
+      <div className='counter'> 
+        <h1>{val}</h1>
+        <button className='inc' onClick={handleIncrement}>Increment</button>
+        <button className='dec' onClick={handleDecrement}>Decrement</button>
+      </div>
     </div>
   );
 }
-
 export default App;
