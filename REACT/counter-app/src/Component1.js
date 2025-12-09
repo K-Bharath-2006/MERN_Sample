@@ -1,4 +1,4 @@
-const Component1 = (props) => {
+const Component1 = (props) => { // probs is the keyword to collect objects and without probs we can directly get the value by using {}
     return(
         <div>
             <h3>This is Component 1</h3>
