@@ -90,14 +90,14 @@ function App() {
           })}
         </tbody>
       </table>
-      <ul>
+      <ul key={post.id}>
         {post.map((item)=> {
           return(
             <li>{item.title}</li>
           )
         })}
       </ul>
-      <ol>
+      <ol key={post.id}>
         {post.map((item)=> {
           return(
             <li>{item.body}</li>
