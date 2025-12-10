@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const Guess = ({number,guess,setGuess,score,highScore,msg,bg,handelCheck,handleAgain}) => {
+const GuessPage = ({number,guess,setGuess,score,highScore,msg,bg,handelCheck,handleAgain}) => {
   return (
     <div className="App" style={{ backgroundColor: bg }}>
       <header>
@@ -34,4 +34,4 @@ const Guess = ({number,guess,setGuess,score,highScore,msg,bg,handelCheck,handleA
 };
 
 
-export default Guess;
+export default GuessPage;

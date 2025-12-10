@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import Guess from "./Guess";
+import Guess from "./GuessPage";
 
 function App() {
   let [number, setNumber] = useState("?");
