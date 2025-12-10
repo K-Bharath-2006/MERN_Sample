@@ -34,3 +34,7 @@ button{
 .dec{
   background-color: red;
 }
+
+table,th,tr,th,td{
+  border: 1px solid black;
+}
