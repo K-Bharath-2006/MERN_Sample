@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Counter from "./Counter";
+import TableRow from "./TableRow";
 
 function App() {
   let [val, setVal] = useState(0);
   let [data,setData] = useState([]);
   let [post,setPost] = useState([]);
+  let [loading,setLoading] = useState(true);
 
   const handleIncrement = () => {
     setVal(val + 1);
@@ -41,6 +43,7 @@ function App() {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         const fetchData = await res.json();
         setData(fetchData);
+        setLoading(false);
       } catch (error) {
         console.log("Error :",error);
       }
@@ -79,15 +82,17 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => {
-            return(
-              <tr key = {item.id}>
-                <td>{item.name}</td>
-                <td>{item.email}</td>
-                <td>{item.phone}</td>
-              </tr>
-            );
-          })}
+          {loading === true ? (
+            <tr>
+              <td className="aaa">Loading...</td>
+              <td className="aaa">Loading...</td>
+              <td className="aaa">Loading...</td>
+            </tr>
+          ) : (
+            data.map((item) => {
+              return <TableRow key={item.id} item={item} />;
+            })
+          )}
         </tbody>
       </table>
       <ul key={post.id}>
