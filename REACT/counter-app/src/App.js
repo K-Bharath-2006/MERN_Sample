@@ -5,6 +5,7 @@ import Counter from "./Counter";
 function App() {
   let [val, setVal] = useState(0);
   let [data,setData] = useState([]);
+  let [post,setPost] = useState([]);
 
   const handleIncrement = () => {
     setVal(val + 1);
@@ -47,7 +48,20 @@ function App() {
     fetchApi();
   },[]);
 
-  console.log(data);
+  useEffect(() => {
+    const fetchApi2 = async ()=> {
+      try {
+      const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+      const fetchData = await res.json();
+      setPost(fetchData);
+    } catch (error) {
+      console.log(error);
+    }
+    }
+    fetchApi2();
+  },[]);
+  //  for useEffect we need to send to things 1.callback() And 2. Array of dependencies
+  // console.log(data);
   return (
     <div className="App">
       <h1>Welcome to Great Karikalan Magic Show</h1>
@@ -67,7 +81,7 @@ function App() {
         <tbody>
           {data.map((item) => {
             return(
-              <tr>
+              <tr key = {item.id}>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
@@ -76,6 +90,20 @@ function App() {
           })}
         </tbody>
       </table>
+      <ul>
+        {post.map((item)=> {
+          return(
+            <li>{item.title}</li>
+          )
+        })}
+      </ul>
+      <ol>
+        {post.map((item)=> {
+          return(
+            <li>{item.body}</li>
+          )
+        })}
+      </ol>
     </div>
   );
 }
