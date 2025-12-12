@@ -9,7 +9,6 @@ import About from './Pages/About';
 import Search from './Pages/Search';
 import Cart from './Pages/Cart';
 
-// const 
 const routerVariables = createBrowserRouter([
   {
     path:"/",
