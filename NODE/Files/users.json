@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Bharath K",
+    "age": 21,
+    "email": "bharath@example.com",
+    "password": "bharath@123",
+    "college": "Sri Eshwar College of Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Dinesh",
+    "age": 20,
+    "email": "dinesh.s@example.com",
+    "password": "dinesh@123",
+    "college": "PSG Tech"
+  },
+  {
+    "id": 3,
+    "name": "vignesh",
+    "age": 22,
+    "email": "vignesh07@example.com",
+    "password": "Vicky$789",
+    "college": "Kumaraguru College of Technology"
+  },
+  {
+    "id": 4,
+    "name": "Bharathi",
+    "age": 19,
+    "email": "bharathi@example.com",
+    "password": "bharathi@123",
+    "college": "Coimbatore Institute of Technology"
+  },
+  {
+    "id": 5,
+    "name": "Jaga",
+    "age": 23,
+    "email": "jaga@example.com",
+    "password": "jaga@123",
+    "college": "Hindustan College of Engineering"
+  },
+  {
+    "id": 6,
+    "name": "Srinath",
+    "age": 20,
+    "email": "srinath@example.com",
+    "password": "srianth@123",
+    "college": "Amrita School of Engineering"
+  },
+  {
+    "id": 7,
+    "name": "rahul_dev",
+    "age": 24,
+    "email": "rahul.dev@example.com",
+    "password": "Rahul!555",
+    "college": "Anna University"
+  },
+  {
+    "id": 8,
+    "name": "Yaswanth",
+    "age": 21,
+    "email": "yas@example.com",
+    "password": "yas@222",
+    "college": "SNS College of Technology"
+  },
+  {
+    "id": 9,
+    "name": "mohan_v",
+    "age": 22,
+    "email": "mohan.v@example.com",
+    "password": "Mohan@654",
+    "college": "Government College of Technology"
+  },
+  {
+    "id": 10,
+    "name": "selva",
+    "age": 20,
+    "email": "selva@example.com",
+    "password": "Selva#808",
+    "college": "Karunya Institute of Technology"
+  }
+]

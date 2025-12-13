@@ -61,11 +61,18 @@ const http = require("http");
 let htmlData = fs.readFileSync("./Files/index.html","utf-8");
 console.log(htmlData);
 
+let jsonData = fs.readFileSync("./Files/users.json","utf-8");
+
+
 // 1. We have to create the server 
 const server = http.createServer((req,res)=>{
-    console.log(req.url);
-    // res.end("Server Create using Node");
-    res.end(htmlData);
+    if(req.url === "/") res.end(htmlData);
+    else if(req.url === "/about") res.end("about page")
+    else if(req.url === "/api") res.end(jsonData);
+    else res.end("Wrong Url")
+    // console.log(req.url);
+    // // res.end("Server Create using Node");
+    // res.end(htmlData);
 });
 
 // this is called server side rendering because we take the html data from server side like above
