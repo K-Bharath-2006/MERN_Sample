@@ -3,11 +3,40 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import Home from "./Pages/Home";
+import RegisterWithHooks from "./Pages/RegisterWithHooks";
+import RegisterWithoutHooks from "./Pages/RegisterWithoutHooks";
 
+
+const routerVariables = createBrowserRouter([
+  {
+    path:"/",
+    element : <App />,
+    children : [
+      {
+        path : "/",
+        element : <Home />,
+      },
+      {
+        path : "/register-with-hooks",
+        element : <RegisterWithHooks />
+      },
+      {
+        path : "/register-without-hooks",
+        element : <RegisterWithoutHooks />
+      },
+      {
+        path:"*",
+        element: <h1>Page Not Found ... Please check the url</h1>
+      },
+    ],
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={routerVariables} />
   </React.StrictMode>
 );
 
